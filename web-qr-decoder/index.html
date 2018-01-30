@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<title>QR kDecoder</title>
+	
+	<link rel="stylesheet" href="css/qrkdecoder.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html,
+		body{
+			font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+		}
+
+		.wrapper{
+			max-width: 1024px;
+			margin: 0 auto; 
+			padding: 20px;
+		}
+
+		input[type='text']{
+			padding: 10px;
+			font-size: 14px;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			width: 300px;
+		}
+		button{
+			font-size: 14px;
+			cursor: pointer;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			padding: 5px 10px;
+		}
+
+		.input_group input[type='text']{
+			float: left;
+			line-height: 18px;
+			border-right: none;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		.input_group button{
+			float: left;
+			line-height: 28px;
+			font-size: 24px;
+			padding: 5px 10px;
+			border-left: none;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			background-color: #eaeaea;
+		}
+		.input_group:after{
+			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h3>QR kDecoder for desktop and mobile</h3>
+		<br>
+		<div class="input_group">
+			<input type="text" id="targetInput" placeholder="code here">
+			<button id="scanButton">
+				<i class="fa fa-qrcode"></i>
+			</button>
+		</div>
+
+
+		<!-- <div class="qrkdecoder-container">
+			<div class="qrkdecoder-container-background"></div>
+			<div class="qrkdecoder-desktop">
+				<canvas class="qrkdecoder-desktop-canvas"></canvas>
+
+				<div class="qrkdecoder-desktop-control">
+					<div class="qrkdecoder-close">&#10006;</div>
+
+					<div class="qrkdecoder-cam-select">
+						<select class="qrkdecoder-cam-selector"></select>
+					</div>
+					<div class="qrkdecoder-scan-decode">
+						<button class="qrkdecoder-scan-decode-button" data-decode-text="Decoding...">
+							Scan &amp; decode
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="qrkdecoder-mobile">
+				<canvas class="qrkdecoder-mobile-canvas"></canvas>
+
+				<div class="qrkdecoder-mobile-control">
+					<div class="qrkdecoder-close">&#10006;</div>
+
+					<div class="qrkdecoder-scan-decode">
+						<div class="qrkdecoder-scan-decode-bg"></div>
+						<button class="qrkdecoder-scan-decode-button" data-decode-text="Decoding...">
+							Scan &amp; decode
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>-->
+	</div> 
+
+
+	<!-- Libs for QR detection and decode -->	
+	<script src="js/libs/grid.js"></script>
+	<script src="js/libs/version.js"></script>
+	<script src="js/libs/detector.js"></script>
+	<script src="js/libs/formatinf.js"></script>
+	<script src="js/libs/errorlevel.js"></script>
+	<script src="js/libs/bitmat.js"></script>
+	<script src="js/libs/datablock.js"></script>
+	<script src="js/libs/bmparser.js"></script>
+	<script src="js/libs/datamask.js"></script>
+	<script src="js/libs/rsdecoder.js"></script>
+	<script src="js/libs/gf256poly.js"></script>
+	<script src="js/libs/gf256.js"></script>
+	<script src="js/libs/decoder.js"></script>
+	<script src="js/libs/qrcode.js"></script>
+	<script src="js/libs/findpat.js"></script>
+	<script src="js/libs/alignpat.js"></script>
+	<script src="js/libs/databr.js"></script>
+
+	
+	<script src="js/qrkdecoder.js"></script>
+	<script>
+	document.querySelector('#scanButton').addEventListener('click', function(){
+		qrkdecoder({
+			auto_start: true,
+			onSuccess: function(result){
+				document.querySelector('#targetInput').value = result;
+			}
+		});
+	});
+	</script>
+</body>
+</html>
