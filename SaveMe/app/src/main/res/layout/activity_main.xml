@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Project "Save Me"
+* Created by Dragos Atanasoae
+* Email: dragos.atanasoae@gmail.com
+* University "1 Decembrie 1918" Alba-Iulia
+* MIT License
+* Copyright (c) 2018 Dragos Atanasoae
+-->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_splash"
+    tools:context="com.atanasoae.dragos.saveme.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designed by Dragos Atanasoae"
+        android:textSize="8dp"
+        android:textColor="#d0fa5800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnFlashlightSOS"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButton"
+        android:foreground="@drawable/ic_sos"
+        android:hapticFeedbackEnabled="false"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFlashlightSOS"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/colorButtonTag"
+        android:text="Flashlight"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFlashlightSOS" />
+
+    <ImageButton
+        android:id="@+id/btnWhereIAm"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButton"
+        android:foreground="@drawable/ic_my_location2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMyLocation"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorButtonTag"
+        android:text="Where i am?"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWhereIAm" />
+
+    <ImageButton
+        android:id="@+id/btnSendMyLocation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorButton"
+        android:foreground="@drawable/ic_sms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFlashlightSOS" />
+
+    <TextView
+        android:id="@+id/textSendMyLocation"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/colorButtonTag"
+        android:text="Send my Location"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendMyLocation" />
+
+
+    <ImageButton
+        android:id="@+id/btnEmergencyCall"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorButton"
+        android:foreground="@drawable/ic_emergency_call"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMyLocation" />
+
+    <TextView
+        android:id="@+id/textEmergencyCall"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorButtonTag"
+        android:text="Emergency Call"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmergencyCall" />
+
+    <ImageButton
+        android:id="@+id/btnCallFamily"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorButton"
+        android:foreground="@drawable/ic_family"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSendMyLocation" />
+
+    <TextView
+        android:id="@+id/textCallFamily"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/colorButtonTag"
+        android:text="Call Family"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCallFamily" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorButton"
+        android:foreground="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmergencyCall" />
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorButtonTag"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSettings" />
+
+</android.support.constraint.ConstraintLayout>

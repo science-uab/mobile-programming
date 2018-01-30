@@ -1,0 +1,163 @@
+
+
+.qrkdecoder-container{
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+	position: fixed;
+	z-index: 500;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.qrkdecoder-container *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.qrkdecoder-container .qrkdecoder-container-background{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(40, 40, 40, 0.8);
+}
+/* Desktop version*/	
+.qrkdecoder-container .qrkdecoder-desktop{
+	position: relative;
+	z-index: 501;
+	max-width: 1024px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-top: 60px;
+	padding: 20px 10px;
+	background-color: #fff;
+	border-radius: 4px;
+	display: none;
+}
+.qrkdecoder-container .qrkdecoder-desktop:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-canvas{
+	/*width: 1280px;
+	height: 720px;*/
+	width: 70%;
+	float: left;
+	background: #000;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control{
+	box-sizing: border-box;
+	width: 30%;
+	float: right;
+	padding: 10px;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control .qrkdecoder-close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control .qrkdecoder-cam-select{
+	margin-bottom: 10px;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control .qrkdecoder-cam-select .qrkdecoder-cam-selector{
+	width: 100%;
+	padding: 5px 10px;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control .qrkdecoder-scan-decode .qrkdecoder-scan-decode-button{
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 4px;
+	background-color: #109cff;
+	color: #fff;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control .qrkdecoder-scan-decode .qrkdecoder-scan-decode-button:hover{
+	background-color: #147cc5;
+}
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control .qrkdecoder-scan-decode .qrkdecoder-scan-decode-button:disabled,
+.qrkdecoder-container .qrkdecoder-desktop .qrkdecoder-desktop-control .qrkdecoder-scan-decode .qrkdecoder-scan-decode-button:disabled:hover{
+	opacity: 0.6;
+	cursor: default;
+}
+
+/* Mobile version*/	
+.qrkdecoder-container .qrkdecoder-mobile{
+	position: fixed;
+	z-index: 501;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: #15171a;
+	display: none;
+}
+.qrkdecoder-container .qrkdecoder-mobile .qrkdecoder-mobile-canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.qrkdecoder-container .qrkdecoder-mobile .qrkdecoder-mobile-control .qrkdecoder-close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-size: 1.8em;
+	font-weight: 200;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+.qrkdecoder-container .qrkdecoder-mobile .qrkdecoder-mobile-control .qrkdecoder-light{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	color: #fff;
+	font-size: 1.8em;
+	font-weight: 200;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+.qrkdecoder-container .qrkdecoder-mobile .qrkdecoder-mobile-control .qrkdecoder-scan-decode{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+}
+.qrkdecoder-container .qrkdecoder-mobile .qrkdecoder-mobile-control .qrkdecoder-scan-decode .qrkdecoder-scan-decode-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-top: 1px solid #000;
+	box-shadow: 0px 0px 2px #000;
+	/*background-color: #162639;
+	filter: blur(5px);*/
+}
+.qrkdecoder-container .qrkdecoder-mobile .qrkdecoder-mobile-control .qrkdecoder-scan-decode .qrkdecoder-scan-decode-button{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: none;
+
+	border: none;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 200;
+	color: #fff;
+	cursor: pointer;
+}
+.qrkdecoder-container .qrkdecoder-mobile .qrkdecoder-mobile-control .qrkdecoder-scan-decode .qrkdecoder-scan-decode-button:disabled{
+	opacity: 0.6;
+}
