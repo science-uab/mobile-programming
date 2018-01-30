@@ -1,0 +1,116 @@
+<!-- 
+Author: Iga (Voronianu) Sanda Florina <vorosanda@gmail.com> 
+MIT License 
+--> 
+<!DOCTYPE html>
+<html style = "height:100%;">
+<body style = "height:100%;">
+ <script language="javaScript">function clockTick() {
+  var currentTime = new Date(),
+      month = currentTime.getMonth() + 1,
+      day = currentTime.getDate(),
+      year = currentTime.getFullYear(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes(),
+      seconds = currentTime.getSeconds(),
+      text = (day + "/" + month + "/" + year + '  ' + hours + ':' + minutes + ':' + seconds);
+  document.getElementById('date').innerHTML = text;
+}
+setInterval(clockTick, 1000);
+</script>
+<span id="date"></span>
+<script src ="vibrate.js">
+</script><BR><BR>
+<center>
+<table border="2">
+	<tr>
+		<td>
+		<center> <h3 style="font-family:verdana; color:#32cd32;padding-top:3px">VIZIONATI   FILMULETUL</h3></center>
+					<br>
+			<video width = "320" height = "240" src = "https://pabd2017.com/mihai/IMG_1892.MOV" controls autoplay>My browser does not support video...</video></center>
+	</td>
+	<td>
+	<center> <h3 style="font-family:verdana; color:#32cd32;padding-top:3px">APLICATIE  SENZOR</h3></center>
+		<center>
+		<p id = "id_alpha"></p>
+        <p id = "id_beta"></p>
+        <p id = "id_gamma"></p>
+
+<p id = "id_acc">Acceleration = </p>
+<p id = "id_acc_g">AccelerationG = </p>
+<p id = "id_rotation_rate">Rotation rate = </p>
+<br>
+<p><img src = "flori.jpg" id = "id_img" style = "display:none"/><p>
+
+<br>
+<svg width = "300" height = "200" id = "id_svg">
+<circle cx = "100" cy = "100" r = "20" stroke = "blue" fill = "#FF0000" id = "id_circle1"/>
+<circle cx = "150" cy = "150" r = "20" stroke = "green" fill = "#FFFF66" id = "id_circle2"/>
+</svg>
+
+<script src = "sensors.js">
+</script>
+<script src = "svg_move.js">
+</script>
+
+		</center></td>
+		
+		<td>
+		<center>
+			<form method="post" action="vorosanda@yahoo.com">
+				<br>
+					<h2 style="font-family:verdana; color:#32cd32;padding-top:5px">Opinia dumneavoastra conteaza</h1>
+					<br>
+				<center>
+						<input type="text" placeholder="Nume" class="input"></center>
+					<br>
+					<center>
+						<input type="text" placeholder="Prenume" class="input"></center>
+					<br>
+				<center>
+						<input type="text" placeholder="E-mail/Telefon" class="input"></center>
+					<br>
+				<center>
+						<textarea  placeholder="Comentarii..."></textarea></center>
+					<br>
+				<center>
+						<input type="reset" value="Resetati informatiile" class="button"></center>
+					<br>
+				<center>
+						<h2 style="font-family:verdana; color:#32cd32;padding-top:5px;">Ati gasit informatiile necesare?</h2></center>
+					<br>
+				<center>
+						<input type="checkbox" style="margin-left:-100px;">     DA</center>
+				<center>
+						<input type="checkbox" style="margin-left:-100px;">     NU</center>
+					<br>
+				<center>
+						<input type="submit" value="Trimite informatiile" class="button" onclick="ale( )"></center></form><br>
+					</td>
+					<td>
+					<center> <h3 style="font-family:verdana; color:#32cd32;padding-top:3px">CAMERA FOTO</h3></center>
+					<p>UI version: 2018.01.28.0</p>
+<p id = "id_business_level_version"></p><center><video width = "220" height = "140" autoplay id = "id_video">My browser does not support video...</video>
+
+<p><canvas id = "id_canvas" width = "220" height = "140"></canvas></p>
+
+<script src ="cam_proiect.js">
+</script> </center> </td>
+				</tr>
+			</table>
+</center>
+<p>
+<script>
+function ale( ){
+alert("Sunteti sigur ca trimiteti informatiile?");
+}
+</script>
+
+<p id = "id_business_level_version"></p>
+<p id = "id_p"></p>
+<div id = "id_map"  style = "height:100%;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1GsOCvClXYlsZBWA7UZ0CJ0XLaFrXroQ"
+    async defer></script>	
+<script src ="formular.js" defer></script>
+</body>
+</html>

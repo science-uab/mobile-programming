@@ -1,0 +1,33 @@
+<!-- 
+ Author:Iga (Voronianu) Sanda <vorosanda@gmail.com> 
+ MIT License 
+ --> 
+ <!DOCTYPE html> 
+ <html> 
+     <head> 
+         <title>Numar Pasi</title> 
+         <meta name="viewport" content="initial-scale=1.0, user-scalable=no"> 
+         <meta charset="utf-8"> 
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> 
+         <link rel="stylesheet" href="app.css"> 
+     </head> 
+     <body> 
+         <div class="container d-flex justify-content-center align-items-center h-100"> 
+             <div class="row"> 
+                 <div class="col-12 text-center"> 
+                     <div id="steps-counter" class="mb-5"> 0 </div> 
+                     <div id="buttons-container" class="mb-2"> 
+                         <button onclick="resetSteps()" id="reset-button" class="btn btn-primary">Reset</button> 
+                         <button onclick="startSteps()" id="start-button" class="btn btn-primary">Start</button> 
+                         <button onclick="stopSteps()" id="stop-button" class="btn btn-primary">Stop</button> 
+                     </div> 
+                     <div id="info-box" class="alert alert-info"></div> 
+                 </div> 
+            </div> 
+         </div> 
+ 
+ 
+     <script src="shake.js"></script> 
+     <script src="app.js"></script> 
+    </body> 
+ </html> 
