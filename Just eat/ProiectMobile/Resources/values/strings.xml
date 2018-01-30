@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Proiect mobile</string>
+
+	  <string name="loading">Loading…</string>
+    <string name="restaurantList">Restaurant list</string>
+    <string name="restaurantLocation">Restaurant locations</string>
+
+    <string name="play_services_error_fmt">Google Play Services Error: {0}</string>
+    <string name="google_maps_key">AIzaSyA5nCn0gCYCYdM4UxpJogo_3mACQIWEnaQ</string>
+</resources>

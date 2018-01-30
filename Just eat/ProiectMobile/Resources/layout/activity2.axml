@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="80dp">
+            <Button
+                android:id="@+id/buttonRestaurantList"
+                android:background="@drawable/restaurantList"
+                android:layout_width="180dp"
+                android:layout_height="180dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/restaurantList" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="60dp" />
+            <Button
+                android:id="@+id/buttonRestaurantMap"
+                android:background="@drawable/restaurantMap"
+                android:layout_width="180dp"
+                android:layout_height="180dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/restaurantLocation" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
