@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 
+Proiect Rusu Marius
+
+Aplicatie pentru afisarea conexiunii la alimentarea cu energie electrica, a nivelului de incarcare a 
+bateriei telefonului si a conexiunii la reteaua de date. 
+Se afiseaza si un grafic de tip placinta cu starea bateriei (nivelul de incarcare). 
+
+deschidem in browser: 
+http://htmlpreview.github.io/?https://github.com/mariusrusu80/js/blob/master/myproject.html
+
+am creat libraria mylib.js si am inclus-o
+
+Documentatie pentru afisarea bateriei folosita de pe: 
+https://www.w3.org/TR/battery-status/
+
+Librarie pie chart folosita de pe: 
+http://canvasjs.com/
+-->
+<html>
+<head>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="mylib.js"></script>
+</head>
+<body>
+
+<p>Click pe buton pentru a vedea incarcarea bateriei si statusul retelei.</p>
+
+<button onclick="afiseazaInformatii()">Afisare informatii</button>
+
+<!-- status baterie -->
+<!-- este conectat / deconectat la incarcator -->
+<div id="incarcare">(status incarcare necunoscut)</div>
+<!--  nivelul bateriei -->
+<div id="nivelBaterie">(nivel baterie necunoscut)</div>
+
+<!-- status retea internet --> 
+<div id="retea">(status retea necunoscut)</div>
+
+
+<!-- pie chart nivel baterie pentru vizualizare rapida -->
+<div id="pieIncarcareBaterie" style="height: 360px; width: 100%;"></div>
+<br/>
+
+
+</body>
+</html> 
+
+
