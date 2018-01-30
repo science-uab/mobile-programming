@@ -1,3 +1,6 @@
 [submodule "programaremobile"]
 	path = programaremobile
 	url = https://github.com/mitzaalex/programaremobile
+[submodule "notesApp"]
+	path = notesApp
+	url = https://github.com/Lucian-Olariu/notesApp
