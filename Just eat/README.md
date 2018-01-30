@@ -4,6 +4,10 @@ Just eat
 Just eat provides an easy way to find places to eat near you. 
 If you allow it, the app can find the nearest restaurants just by using your location. Also finds the information about name of restaurants, email and phone number.
 
+Build instructions
+------------------
+Instal Xamarin.Android for Visual Studio, Open project and install property packages. 
+
 Instructions
 ------------
 * Tap the "Sign in" button to sign in.
