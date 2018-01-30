@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.alexa.testyoursensors.SplashScreen"
+android:background="@drawable/gradient">
+
+<TextView
+    android:id="@+id/copyright"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="15dp"
+    android:gravity="center_horizontal"
+    android:text="Bala Alexandru © 2018"
+    android:textColor="@android:color/darker_gray"
+    android:textSize="12sp" />
+
+<ImageView
+    android:id="@+id/imageViewProfile"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_above="@+id/appName"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="16dp"
+    android:src="@drawable/logo"
+    android:contentDescription="App Logo" />
+
+<TextView
+    android:id="@+id/appName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/copyright"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="224dp"
+    android:text="Test your Sensors"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat"
+    android:textColor="@android:color/background_light"
+    android:textColorLink="@android:color/darker_gray"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+</RelativeLayout>
+

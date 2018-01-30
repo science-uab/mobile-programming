@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alexa.testyoursensors">
+
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".sensors.GyroscopeSensor" />
+        <activity android:name=".sensors.ProximitySensor" />
+        <activity android:name=".sensors.OrientationSensor" />
+        <activity android:name=".sensors.BarometerSensor" />
+        <activity android:name=".sensors.CheckSensors" />
+        <activity android:name=".sensors.LightSensor" />
+        <activity android:name=".sensors.MagneticSensor" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
