@@ -1,6 +1,8 @@
 # Toolbox
 Android application created with Processing for Android.
 
+### Author Oancea Maria-Nicoleta
+
 ## About:
   - Created to be used in constructions, but can be used in other domains.
   - The source code is exported as .apk from Processing IDE.
