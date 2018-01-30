@@ -10,3 +10,7 @@ To install run the following
 1. npm install
 2. react-native run-android
 ```
+
+Author Malai Mihai
+
+License MIT
