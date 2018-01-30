@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidSpeedMeter</string>
+    <string name="total_distance">Distanta Totala</string>
+    <string name="stop">STOP</string>
+    <string name="pause">PAUSE</string>
+    <string name="start">START</string>
+</resources>
