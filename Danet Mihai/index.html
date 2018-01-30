@@ -1,0 +1,41 @@
+<!-- Danet Mihai
+mihaidanet@gmail.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Webcam</title>
+</head>
+<body>
+	<div class="container">
+
+		<h1>Weather and Webcam</h1>
+		<div class="row">
+			<div id="weather">
+				<div id="city"></div>
+				<div>
+					<span id="temp"></span>
+					<span id="unit"></span>
+				</div>
+				<div id="main"></div>
+				<div id="icon"><img src="#" alt=""></div>
+			</div>
+		  	
+			<video autoplay="true" id="video">
+	     
+	    	</video>
+	    </div>
+	    <div class="select">
+			<label for="videoSource">Video source: </label><select id="videoSource"></select>
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
