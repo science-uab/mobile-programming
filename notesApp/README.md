@@ -1,9 +1,9 @@
+# Student - Olariu Lucian
+Email: `olariu.lucian1@gmail.com`
+MIT License
+
 # NotesApp
 A react-native app using the speech-to-text API, camera roll and geolocation for taking notes (requires backend handling).
-
-# Author
-Olariu Lucian `olariu.lucian1@gmail.com`
-MIT License
 
 ## Instalation instructions
 Please follow the instalation instructions on the [React-Native website](https://facebook.github.io/react-native/docs/getting-started.html)
