@@ -83,7 +83,9 @@
 			_this.closeButtonSelector.addEventListener('click', _this.onCloseClick);
 			// Light button
 			_this.lightButtonSelector = _this.activeContainerVersion.getElementsByClassName('qrkdecoder-light')[0];
-			_this.lightButtonSelector.addEventListener('click', _this.toggleLight);
+			if(_this.lightButtonSelector){
+				_this.lightButtonSelector.addEventListener('click', _this.toggleLight);
+			}
 			// Container background
 			_this.containerBackgroundSelector = _this.activeContainer.getElementsByClassName('qrkdecoder-container-background')[0];
 			_this.containerBackgroundSelector.addEventListener('click', _this.onCloseClick);
@@ -401,7 +403,7 @@
 
 		_this.onCloseClick = function(){
 			_this.setHasLight(false);
-			
+
 			_this.closeDecoder();
 		}
 
@@ -412,7 +414,7 @@
 			var imageCapture = new ImageCapture(track)
 
 			imageCapture.getPhotoCapabilities().then(function(self){
-				if(self.fillLightMode.length > 0 && self.fillLightMode.indexOf('off') !== -1){
+				if(self.fillLightMode && self.fillLightMode.length > 0 && self.fillLightMode.indexOf('off') !== -1){
 					_this.setHasLight(true);
 				}else{
 					_this.setHasLight(false);
@@ -532,14 +534,19 @@
 			_this.hasLight = value;
 
 			if(value){
-				_this.lightButtonSelector.style.display = 'block';
+				if(_this.lightButtonSelector)
+					_this.lightButtonSelector.style.display = 'block';
 			}else{
-				_this.lightButtonSelector.style.display = 'none';
+				if(_this.lightButtonSelector)
+					_this.lightButtonSelector.style.display = 'none';
+
 				_this.setLightOn(false);
 			}
 		}
 
 		_this.setLightOn = function(value){
+			if(! _this.hasLight) return;
+			
 			_this.lightOn = value;
 
 			_this.track.applyConstraints({
@@ -548,8 +555,6 @@
 		}
 
 		_this.toggleLight = function(){
-			if(! _this.hasLight) return;
-
 			_this.setLightOn(! _this.lightOn);
 		}
   	
