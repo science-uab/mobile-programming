@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.xamarin.school" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="14" />
+	<application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/MyTheme">
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_key" />
+	</application>
+	<user-permission android:name="android.permission.INTERNET"></user-permission>
+	<user-permission android:name="android.permission.GET_ACCOUNTS"></user-permission>
+	<user-permission android:name="android.permission.USE_CREDENTIALS"></user-permission>
+	<uses-permission android:name="android.permision.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permision.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+</manifest>

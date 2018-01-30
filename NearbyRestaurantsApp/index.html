@@ -1,0 +1,101 @@
+<!--
+Autor: Baic Andrei <NearbyRestaurantsApp.andrei@gmail.com>
+MIT License
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurante in apropiere </title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<style>
+		/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+		#map {
+			height: 400px;
+		}
+		/* Optional: Makes the sample page fill the window. */
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<script>
+        // This example requires the Places library. Include the libraries=places
+        // parameter when you first load the API. For example:
+        // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+        var map;
+        var infowindow;
+        var crd = {
+            lat: null,
+			lng: null
+		};
+
+        // The callback for the initialize map function
+        function initMap() {
+            // Getting the current user coordinates
+			navigator.geolocation.getCurrentPosition(function(pos) {
+                crd.lat = pos.coords.latitude;
+                crd.lng = pos.coords.longitude;
+                var myLocation = {lat: crd.lat, lng: crd.lng};
+
+                // Attaching a map object to the HTML element
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLocation,
+                    zoom: 15
+                });
+
+                // Initialize the info window service and passing it options (radius and type of search)
+                infowindow = new google.maps.InfoWindow();
+                var service = new google.maps.places.PlacesService(map);
+                service.nearbySearch({
+                    location: myLocation,
+                    radius: 5000,
+                    type: ['restaurant']
+                }, callback);
+			});
+        }
+
+        // Callback function used by the Google Services to loop through all the places coordinates
+        function callback(results, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (var i = 0; i < results.length; i++) {
+                    createMarker(results[i]);
+                }
+            }
+        }
+
+        // Function called in the callback function to draw markers for the services
+        function createMarker(place) {
+            var placeLoc = place.geometry.location;
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+            });
+
+            var myLocationMarker = new google.maps.Marker({
+                map: map,
+                position: {lat: crd.lat, lng: crd.lng}
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent(place.name);
+                infowindow.open(map, this);
+            });
+        }
+	</script>
+</head>
+<body>
+<div class="container">
+	<h1>Cele mai apropiate restaurante</h1>
+<hr />
+	<div class="map-responsive">
+		<div id="map"></div>
+	</div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACsMbX2GHAHUudwoYRmre-ze_MFoLw5Ec&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

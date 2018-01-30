@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexa.testyoursensors.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+                    android:textAllCaps="false"
+                    android:text="Check Sensors" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/gyroscope"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    android:textAllCaps="false"
+                    android:text="Gyroscope" />
+
+                <Button
+                    android:id="@+id/proximity"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    android:textAllCaps="false"
+                    android:text="Proximity" />
+
+                <Button
+                    android:id="@+id/orientation"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    android:textAllCaps="false"
+                    android:text="Orientation" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/barometer"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    android:textAllCaps="false"
+                    android:text="Barometer" />
+
+                <Button
+                    android:id="@+id/lights"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    android:textAllCaps="false"
+                    android:text="Lights" />
+
+                <Button
+                    android:id="@+id/magnetics"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    android:textAllCaps="false"
+                    android:text="Magnetic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
