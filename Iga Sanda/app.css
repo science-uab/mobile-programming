@@ -1,0 +1,31 @@
+/** 
+Author: Iga (Voronianu) Sanda <vorosanda@gmail.com> 
+MIT License 
+**/ 
+
+ html { 
+height: 100%; 
+} 
+ 
+ 
+body { 
+    height: 100%; 
+ } 
+ 
+ 
+ #steps-counter { 
+    font-size: 50px; 
+     font-weight: bold; 
+ } 
+ 
+ 
+ #info-box { 
+     display: none; 
+     transition: all .3s linear; 
+     position: absolute; 
+     bottom: -200px; 
+     left: 50%; 
+     transform: translate(-50%, 0); 
+     min-width: 200px; 
+     text-align: center; 
+ } 

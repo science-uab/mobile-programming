@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+
+<html>
+<body>
+ <script language="javaScript">function clockTick() {
+  var currentTime = new Date(),
+      month = currentTime.getMonth() + 1,
+      day = currentTime.getDate(),
+      year = currentTime.getFullYear(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes(),
+      seconds = currentTime.getSeconds(),
+      text = (day + "/" + month + "/" + year + ' <br> ' + hours + ':' + minutes + ':' + seconds);
+  document.getElementById('date').innerHTML = text;
+}
+
+setInterval(clockTick, 1000);
+</script>
+<span id="date"></span>
+<br>
+ 
+ <script type = "text/javascript">
+
+function firstAnswer()
+
+  {
+
+    for (i=0 ; i<document.first.quiz.length ; i++)
+         {
+              if (document.first.quiz[i].checked==true) 
+           {
+              var t = document.first.quiz[i].value
+           }
+ }
+
+if (t == "2" )
+ { 
+  document.getElementById("txt1").value = "2"
+  }
+else  { 
+   document.getElementById("txt1").value = "0"
+}
+ var item = document.getElementById("two");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("one");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+
+function secondAnswer()
+  {
+
+    for (i=0 ; i<document.second.quiz.length ; i++)
+         {
+              if (document.second.quiz[i].checked==true) 
+           {
+              var t = document.second.quiz[i].value
+           }
+ }
+
+if (t == "2" )
+ { 
+  document.getElementById("txt2").value = "1"
+  }
+else  { 
+   document.getElementById("txt2").value = "0"
+}
+ var item = document.getElementById("three");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("two");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function thirdAnswer()
+  {
+
+    for (i=0 ; i<document.third.quiz.length ; i++)
+         {
+              if (document.third.quiz[i].checked==true) 
+           {
+              var t = document.third.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ { 
+  document.getElementById("txt3").value = "1"
+  }
+else  { 
+   document.getElementById("txt3").value = "0"
+}
+ var item = document.getElementById("four");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("three");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+function fourAnswer()
+  {
+
+    for (i=0 ; i<document.four.quiz.length ; i++)
+         {
+              if (document.four.quiz[i].checked==true) 
+           {
+              var t = document.four.quiz[i].value
+           }
+ }
+
+if (t == "3" )
+ { 
+  document.getElementById("txt4").value = "1"
+  }
+else  { 
+   document.getElementById("txt4").value = "0"
+}
+ var item = document.getElementById("five");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("four");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+function fiveAnswer()
+  {
+
+    for (i=0 ; i<document.five.quiz.length ; i++)
+         {
+              if (document.five.quiz[i].checked==true) 
+           {
+              var t = document.five.quiz[i].value
+           }
+ }
+
+if (t == "2" )
+ { 
+  document.getElementById("txt5").value = "1"
+  }
+else  { 
+   document.getElementById("txt5").value = "0"
+}
+ var item = document.getElementById("six");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("five");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function sixAnswer()
+  {
+
+    for (i=0 ; i<document.six.quiz.length ; i++)
+         {
+              if (document.six.quiz[i].checked==true) 
+           {
+              var t = document.six.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { 
+  document.getElementById("txt6").value = "1"
+  }
+else  { 
+   document.getElementById("txt6").value = "0"
+}
+ var item = document.getElementById("seven");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("six");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+function sevenAnswer()
+  {
+
+    for (i=0 ; i<document.seven.quiz.length ; i++)
+         {
+              if (document.seven.quiz[i].checked==true) 
+           {
+              var t = document.seven.quiz[i].value
+           }
+       }
+
+if (t == "2" )
+ { 
+  document.getElementById("txt7").value = "1"
+  }
+else  { 
+   document.getElementById("txt7").value = "0"
+}
+ var item = document.getElementById("eight");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("seven");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function eightAnswer()
+  {
+
+    for (i=0 ; i<document.eight.quiz.length ; i++)
+         {
+              if (document.eight.quiz[i].checked==true) 
+           {
+              var t = document.eight.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { 
+  document.getElementById("txt8").value = "1"
+  }
+else  { 
+   document.getElementById("txt8").value = "0"
+}
+ var item = document.getElementById("nine");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("eight");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function nineAnswer()
+  {
+
+    for (i=0 ; i<document.nine.quiz.length ; i++)
+         {
+              if (document.nine.quiz[i].checked==true) 
+           {
+              var t = document.nine.quiz[i].value
+           }
+       }
+
+if (t == "3" )
+ { 
+  document.getElementById("txt9").value = "1"
+  }
+else  { 
+   document.getElementById("txt9").value = "0"
+}
+ var item = document.getElementById("ten");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("nine");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+function total()
+{
+var a = parseInt(document.getElementById("txt1").value)
+var b = parseInt(document.getElementById("txt2").value)
+var c = parseInt(document.getElementById("txt3").value)
+var d = parseInt(document.getElementById("txt4").value)
+var e = parseInt(document.getElementById("txt5").value)
+var f = parseInt(document.getElementById("txt6").value)
+var g = parseInt(document.getElementById("txt7").value)
+var h = parseInt(document.getElementById("txt8").value)
+var i = parseInt(document.getElementById("txt9").value)
+var k = a + b + c + d + e + f + g + h + i 
+document.getElementById("txt").value = k
+alert("Scorul tau este "+k+" puncte din 10");
+}
+</script>
+ 
+	
+	
+</ul></td></tr></div>
+
+<td width="795" bgcolor="white">
+<center>
+
+<h1 align="center">Evaluare HTML</h1>
+<br>
+<div id = "one" class = "unhidden">
+<form name = "first"  >
+1)  Ce inseamna HTML? 
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Home Tool Markup Language<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">Hypertext Markup Language<br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz">Hyperlinks and Text Markup Language<br></br>
+<input type = "button" value = "next" onclick = "firstAnswer()"> 
+<input type = "hidden" id = "txt1">
+</form>
+</div>
+
+<div  class = "hidden" id = "two">
+<form name = "second" >
+2)  Alegeti tagul corect pentru afisarea celui mai mare text.<br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >h6<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">h1<br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz">head<br></br>
+<input type = "button" value = "next" onclick = "secondAnswer()"> 
+<input type = "hidden" id = "txt2">
+</form>
+</div>
+
+<div class = "hidden" id = "three">
+<form name = "third" >
+3) Care este tag-ul corect pentru a trece pe randul urmator?<br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" > br <br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">breack<br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz">bd<br></br>
+<input type = "button" value = "next" onclick = "thirdAnswer()"> 
+<input type = "hidden" id = "txt3">
+</form>
+</div>
+
+<div class = "hidden" id = "four">
+<form name = "four" >
+4) Care este sintaxa corecta pentru un fundal in HTML? <br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >bg<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">bground<br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz">background<br></br>
+<input type = "button" value = "next" onclick = "fourAnswer()"> 
+<input type = "hidden" id = "txt4">
+</form>
+</div>
+
+<div class = "hidden" id = "five">
+<form name = "five" >
+5) Ce tag reprezinta inceputul celulei unui tabel? <br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >table<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">td<br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz">tr<br></br>
+<input type = "button" value = "next" onclick = "fiveAnswer()"> 
+<input type = "hidden" id = "txt5">
+</form>
+</div>
+
+<div class = "hidden" id = "six">
+<form name = "six" >
+6) Ce tag reprezinta hyperlink-ul?<br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >a<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">u <br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz">href<br></br>
+<input type = "button" value = "next" onclick = "sixAnswer()"> 
+<input type = "hidden" id = "txt6">
+</form>
+</div>
+
+<div class = "hidden" id = "seven">
+<form name = "seven" >
+7) Care tag este folosit pentru subliniere? <br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" > ul<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">u <br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz"> b<br></br>
+<input type = "button" value = "next" onclick = "sevenAnswer()"> 
+<input type = "hidden" id = "txt7">
+</form>
+</div>
+
+<div class = "hidden" id = "eight">
+<form name = "eight" >
+8) Care tag este folosit pentru a inclina scrisul? <br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >i<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">u<br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz">b <br></br>
+<input type = "button" value = "next" onclick = "eightAnswer()"> 
+<input type = "hidden" id = "txt8">
+</form>
+</div>
+
+<div class = "hidden" id = "nine">
+<form name = "nine" >
+9) Cu ce tag definim o linie intr-un tabel?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >table<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">td<br></br>
+<input type = "radio" id = "a" value = "3" name = "quiz"> tr<br></br>
+<input type = "button" value = "next" onclick = "nineAnswer()"> 
+<input type = "hidden" id = "txt9">
+</form>
+</div>
+
+<div class = "hidden" id = "ten">
+<form name = "ten" >
+</form>
+<input type = "hidden" id = "txt">
+<input type = "button" value = "score"  onclick = "total()">
+</div>
+
+
+
+
+
+
+<style type = "text/css">
+.hidden
+{
+display:none;
+}
+.unhidden
+{
+display:block;
+}
+</style>
+ 
+ 
+ </center>
+ 
+ 
+ 
+
+      </dl>
+	  <br> <br> <br> <br> <br>
+    <p>UI version: 2018.01.10.0</p>
+<p id = "id_business_level_version"></p>
+
+<video width = "640" height = "480" autoplay id = "id_video">My browser does not support video...</video>
+
+<canvas id = "id_canvas" width = "640" height = "480"></canvas>
+
+<script src = "cam_proiect.js">
+</script>
+
+	</td></tr>
+  </table>
+  
+</form>
+</div>
+ <br><br>
+
+ 
+ 
+</td></tr></table> 
+
+ <br><br>
+ <br><br>
+ <br><br>
+
+
+
+
+
+
+
