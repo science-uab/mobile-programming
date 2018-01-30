@@ -1,0 +1,61 @@
+<!-- Author:Ligia Tatucu
+     Email: ligia.tatucu21@gmail.com-->
+     
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>My first app movie</title>
+	 <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	</head>
+	
+	<body>
+		<div id="unsupported">You're browser does not support the vibration Api</div>
+		<div data-role="page" id="home">
+			<div data-role="header" data-theme="b">
+				<h1>Movie Listings</h1>  <!--header -->
+			</div>
+		<div data-role="main"> <!--interfata pentru formular -->
+			<form id="searchForm">
+				<div class="ui-field-contain">
+					<input type="text" name="searchText" id="searchText" placeholder="Search For A Movie">
+				</div>
+			</form>
+			<div id="supported">
+			<ul id="movies" data-role="listview"></ul>
+			</div>
+		</div>
+		<div data-role="footer" style="text-align: center" data-theme="b"> <!-- footer -->
+			<p>AppMovie &copy;2018</p>
+		</div>
+		</div>
+		
+	<script>
+		$(document).ready(function () { //vibrate function
+            navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+            // Determine if vibration is supported in this web browser
+            if (!navigator.vibrate) {
+                $('#supported').hide();
+                return;
+            }
+            $('#unsupported').hide();
+//             // One second vibration
+            $('#movies').click(function () {
+                navigator.vibrate(1000);
+            });
+           
+        });
+	</script>
+		
+		
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="main.js"></script>
+	</body>
+</html>
