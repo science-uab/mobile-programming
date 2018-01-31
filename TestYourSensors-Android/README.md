@@ -1,5 +1,7 @@
 # TestYourSensors-Android
 
+![alt text](mobile-programming/TestYourSensors-Android/Screenshot.png "Main page")
+
 This repository contains the source code of the android application Test Your Sensors.
 
 # Credits
