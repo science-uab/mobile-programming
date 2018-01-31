@@ -20,3 +20,7 @@ Author
 Name: Iancu Mihai-Ovidiu
 Email: iancu.mihai1994@gmail.com
 Copyright (c) 2018 Iancu Mihai-Ovidiu
+
+Image App
+----------
+![alt text](https://github.com/iancumihai/mobile-programming/blob/master/Just%20eat/JustEat.png "Logo Title Text 1")
