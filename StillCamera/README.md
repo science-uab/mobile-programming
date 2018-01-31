@@ -24,3 +24,5 @@ The minimum target Android API 21 - 5.0(Lollipop)
 PS: No further updates will be available for this application
 
 ## Author: Copyright (c) Radu Goadă - January - 2018 email: radu.goada@gmail.com
+
+![alt-text] (https://github.com/radugoada/mobile-programming/blob/master/StillCamera/appPreview.png "Logo Title Text 1")
