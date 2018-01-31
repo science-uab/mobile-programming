@@ -1,5 +1,10 @@
+
+![alt text](https://github.com/science-uab/mobile-programming/blob/master/Iga%20Sanda/27652969_1691376287585139_1459986290_o.jpg "Logo Title Text 1")
+# Formular
 Author:  Iga (Voronianu) Sanda  Florina   - vorosanda@gmail.com
+
 MIT  License
+
 The mobile app that displays current date and time, uploads a video from the net from an address, uses sensors for voice and camera recognition, uses sensors for location data (longitude, latitude and geographic map), a user opinion form to application and sensor for accelerometer sensors.
 About:
 Created to be used in miscellaneous  domains for information and opinions.
