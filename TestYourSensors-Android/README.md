@@ -1,6 +1,6 @@
 # TestYourSensors-Android
 
-![alt text](https://github.com/alexandrubala94/mobile-programming/TestYourSensors-Android/Screenshot.png "Main page")
+![alt text](https://github.com/alexandrubala94/mobile-programming/blob/master/TestYourSensors-Android/Screenshot.png "Main page")
 
 This repository contains the source code of the android application Test Your Sensors.
 
