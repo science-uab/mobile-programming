@@ -16,6 +16,8 @@ Please follow the instalation instructions on the [React-Native website](https:/
 3. Take note view
 ![Take note View](./components/images/take_note.png =360x640 "Take note form view")
 
+<img src="https://github.com/Lucian-Olariu/mobile-programming/blob/master/notesApp/components/images/note_list.png" width="360" height="640">
+
 ## Additional information
 This app was created for the MBA course `Programare Mobile` run by professor [Mihai Oltean](https://github.com/mihaioltean).
 
