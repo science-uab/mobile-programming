@@ -5,7 +5,7 @@ Baic Andrei `<baic.andrei@gmail.com>`
 This app uses the `Javascript Geolocation API` and the `Google Places API` to search for nearby restaurants.
 
 # Screenshot
-<img src="https://github.com/Lucian-Olariu/mobile-programming/blob/master/NearbyRestaurantsApp/images/nbr_img.png" width="360" height="640">
+<img src="https://github.com/andreibaic/mobile-programming/blob/master/NearbyRestaurantsApp/images/nbr_img.png" width="360" height="640">
 
 App URL: https://andreibaic.github.io/NearbyRestaurantsApp/
 ## How it functions
