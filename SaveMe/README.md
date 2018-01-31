@@ -1,6 +1,9 @@
 # SaveMe
 Author: Atanaoae Dragos Adrian
+
 University "1 Decembrie 1918" Alba Iulia
+
+![alt text](https://github.com/dragosh86eu/mobile-programming/blob/master/SaveMe/SaveMe%20Screenshoot.png "SaveMe screenshot")
 
 Android app "Save Me" project for Mobile development course UAB
 
