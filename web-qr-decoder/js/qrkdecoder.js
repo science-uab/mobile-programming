@@ -40,8 +40,8 @@
 			_this.video = document.createElement('video');
 
 			if(typeof options != 'undefined'){
-				if('videoEl' in options){
-					_this.video = document.getElementById(options.videoEl);
+				if('video_el' in options){
+					_this.video = document.getElementById(options.video_el);
 				}
 			}else{
 				options = {};
