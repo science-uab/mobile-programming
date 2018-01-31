@@ -10,11 +10,11 @@ Please follow the instalation instructions on the [React-Native website](https:/
 
 ## Screenshots
 1. List view of notes
-![Alt text](/components/images/note_list.png?raw=true "NotesApp list view")
+![Alt text](./components/images/note_list.png?raw=true "NotesApp list view")
 2. Single view of notes
-![Alt text](/components/images/view_note.png?raw=true "A single note view")
+![Alt text](./components/images/view_note.png?raw=true "A single note view")
 3. Take note view
-![Alt text](/components/images/take_note.png?raw=true "Take note form view")
+![Alt text](./components/images/take_note.png?raw=true "Take note form view")
 
 ## Additional information
 This app was created for the MBA course `Programare Mobile` run by professor [Mihai Oltean](https://github.com/mihaioltean).
