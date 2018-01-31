@@ -18,8 +18,9 @@ After you installed the app, enter and you will see the following:
 - A text view showing the Yaw Rotation of your device on the 'z axis' (same as a Bubble Leveler)
 
 ## Note:
-THe captured image is storage on your external SD card path
-More extra features (for example Autofocus) will be added in the future. So please stay tuned!
+The captured image is storage on your external SD card path
 
-The minium target Android API 21 - 5.0(Lollipop)
-## Author: Copyright (c) Radu Goadă - January - 2018
+The minimum target Android API 21 - 5.0(Lollipop)
+PS: No further updates will be available for this application
+
+## Author: Copyright (c) Radu Goadă - January - 2018 email: radu.goada@gmail.com
