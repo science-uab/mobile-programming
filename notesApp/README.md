@@ -10,13 +10,11 @@ Please follow the instalation instructions on the [React-Native website](https:/
 
 ## Screenshots
 1. List view of notes
-![NotesApp List View](./components/images/note_list.png =360x640"NotesApp list view")
-2. Single view of notes
-![Single View](./components/images/view_note.png =360x640"A single note view")
-3. Take note view
-![Take note View](./components/images/take_note.png =360x640 "Take note form view")
-
 <img src="https://github.com/Lucian-Olariu/mobile-programming/blob/master/notesApp/components/images/note_list.png" width="360" height="640">
+2. Single view of notes
+<img src="https://github.com/Lucian-Olariu/mobile-programming/blob/master/notesApp/components/images/view_note.png" width="360" height="640">
+3. Take note view
+<img src="https://github.com/Lucian-Olariu/mobile-programming/blob/master/notesApp/components/images/take_note.png" width="360" height="640">
 
 ## Additional information
 This app was created for the MBA course `Programare Mobile` run by professor [Mihai Oltean](https://github.com/mihaioltean).
