@@ -1,7 +1,7 @@
 # Weather Webcam
 
 # Author
-Name: Danet Mihai 
+Name: Danet Mihai
 Email: mihaidanet@gmail.com
 
 #About
