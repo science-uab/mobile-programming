@@ -1,0 +1,46 @@
+<!-- Author:Ligia Tatucu
+     Email: ligia.tatucu21@gmail.com-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>My first app movie</title> 
+	 <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	</head>
+	
+	<body>
+		<div data-role="page" id="movie">
+			<div data-role="header" data-theme="b">  <!--header-->
+				<h1>Movie Listings</h1>
+				<a id="back" href="index.html" class='ui-btn'>Back</a> <!-- butonul back -->
+			</div>
+		<div data-role="main"> <!-- interfata unde sunt afisate detaliile filmului setat --> 
+			<div id="movieTop"></div>
+			<br><br>
+			<ul id="movieDetails" data-role="listview">
+		</div>
+		<div data-role="footer" style="text-align: center" data-theme="b">
+			<p>AppMovie &copy;2018</p>
+		</div>
+		</div>
+		
+	
+	<script> //functia vibrate pentru butonul de back
+		 $(document).ready(function () {
+			  $('#back').click(function () {
+                navigator.vibrate(1000);
+            });
+		 });
+	</script>	
+		
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="main.js"></script>
+	</body>
+</html>
