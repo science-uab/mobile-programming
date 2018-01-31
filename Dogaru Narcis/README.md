@@ -2,6 +2,8 @@
 
 ### Author Dogaru Narics-George
 
+![alt text](https://github.com/NarcisDogaru/MyProject/blob/master/IControlIt/IC%20It.png "Start page")
+
 ## About:
   This application can be used as a remote for PCs (it works only with PCs that have a Bluetooth Adapter). You can use this application to control the mouse cursor, to control the playing media files (play/stop, volume up, volume down), or as a joystick for you favorite games.
   
