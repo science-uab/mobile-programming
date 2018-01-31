@@ -1,7 +1,5 @@
 # TestYourSensors-Android
 
-![alt text](https://github.com/alexandrubala94/mobile-programming/blob/master/TestYourSensors-Android/Screenshot.png "Main page")
-
 This repository contains the source code of the android application Test Your Sensors.
 
 # Credits
@@ -18,3 +16,6 @@ This application was created to be help users get more informations about their 
 5. Barometer sensor - pressure sensor (also known as barometer) reports the atmospheric pressure in hectopascal (hPa);
 6. Lights sensor - light sensor reports the current illumination in SI lux units;
 7. Magnetic sensor - magnetic field sensor (also known as magnetometer) reports the ambient magnetic field, as measured along the 3 sensor axes.
+
+# Main page screenshot
+![alt text](https://github.com/alexandrubala94/mobile-programming/blob/master/TestYourSensors-Android/Screenshot.png "Main page")
