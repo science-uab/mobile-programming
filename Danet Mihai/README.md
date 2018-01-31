@@ -14,3 +14,5 @@ By clicking on the video source the user can choose which camera to use. By clic
 ## Installation
 There is no installation needed.
 
+## Screenshot
+![alt text](https://github.com/mihaid85/mobile-programming/blob/master/Danet%20Mihai/WeatherWebcam.png "Screenshot 1")
