@@ -14,3 +14,6 @@ The Save Me app gives you some important tools for emergency situations:
 4. Emergency Call - call the emergency number
 5. Family Call - call the family phone number defined in section Settings
 6. Settings - define your emergency family phone number, enable/disable gps and other permissions.
+
+# Image App
+![alt text](https://github.com/dragosh86eu/mobile-programming/blob/master/SaveMe/SaveMe%20Screenshoot.png "Logo Title Text 1")
