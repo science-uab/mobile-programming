@@ -85,7 +85,7 @@ export default class AddNote extends Component<{}> {
 
     console.log(payload);
 
-    fetch('http://10.0.0.45:5555/api/v1/note', {
+    fetch('http://192.168.0.45:5555/api/v1/note', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

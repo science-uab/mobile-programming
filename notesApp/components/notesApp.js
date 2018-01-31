@@ -39,7 +39,7 @@ export default class notesApp extends Component<{}> {
   }
 
   async getNotes() {
-    let response = await fetch('http://10.0.0.45:5555/api/v1/notes')
+    let response = await fetch('http://192.168.0.45:5555/api/v1/notes')
     let notes = await response.json()
     this.setState({notes: notes});
   }
