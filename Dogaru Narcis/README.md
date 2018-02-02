@@ -1,6 +1,6 @@
 # IControl it
 
-### Author Dogaru Narics-George
+### Author Dogaru Narcis-George
 
 ![alt text](https://github.com/NarcisDogaru/MyProject/blob/master/IControlIt/IC%20It.png "Start page")
 
