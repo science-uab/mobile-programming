@@ -78,7 +78,7 @@ Save Me is an Android app developed with Android Studio This application was cre
 Still Camera is an Android application designed for photography purposes to take nice and still pictures. It is a basic Camera API interface application.
 
 ## TestYourSensors
-**Bala Alexandru **
+**Bala Alexandru**
 
 "Test your Sensors" is an Android application developed with Android Studio. This application was created to be help users get more informations about their phone sensors.
 
